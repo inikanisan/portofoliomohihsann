@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        transition: background-color 0.5s ease;
+      }
+
+      body:hover {
+        background-color: #f0f8ff;
+      }
+
+      header {
+        background-color: #531717;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        transition: background-color 0.5s ease;
+      }
+
+      header:hover {
+        background-color: #444;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+        padding: 10px 0;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #7a1a13;
+        text-decoration: underline;
+      }
+
+      section {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 50px 20px;
+        background: linear-gradient(
+            to right,
+            rgba(110, 18, 7, 0.951),
+            rgba(231, 72, 48, 0.347)
+          ),
+          url("images/hero-background.jpg") center/cover no-repeat;
+        color: white;
+        transition: transform 0.5s ease;
+      }
+
+      .hero:hover {
+        transform: scale(1.05);
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+      }
+
+      .project {
+        background-color: #bb8b8b;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 30px;
+        width: calc(33% - 20px);
+        box-shadow: 0 4px 6px rgba(255, 2, 2, 0.599);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .project img {
+        width: 100%;
+        border-radius: 5px;
+        transition: opacity 0.3s ease;
+      }
+
+      .project img:hover {
+        opacity: 1.9;
+      }
+
+      .about img {
+        float: left;
+        margin-right: 25px;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        margin-top: 20px;
+        transition: background-color 0.5s ease;
+      }
+
+      footer:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MOH IHSAN</h1>
+      <p>Pengembang Web | Desainer | Kreator</p>
+    </header>
+
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#projects">Proyek</a>
+      <a href="#hobbies">Hobi</a>
+      <a href="#experience">Pengalaman</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <section class="hero">
+      <h1>Selamat Datang di Portofolio Saya</h1>
+      <p>Temukan karya, keahlian, dan passion saya dalam teknologi.</p>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Tentang Saya</h2>
+      <img src="images/profile-photo.jpg" alt="Foto Profil" />
+      <p>
+        Saya MOH IHSAN, mahasiswa aktif semester 5 program study Teknik
+        Informatika Universitas Banten Jaya angkatan tahun 2022. Saya sangat
+        aktif berorganisasi, banyak program yang sukses dan membuat diri saya
+        berkembang lebih baik. Berkat kerja keras saya selama menempuh
+        pendidikan dan berorganisasi di smk sampai duduk dibangku perkuliahan
+        sehingga saya memiliki pola pikir yang kreatif.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Proyek</h2>
+      <div class="project">
+        <img src="images/proyek1.jpg" alt="Proyek 1" />
+        <h3>Proyek 1</h3>
+        <p>Membuat sebuah website untuk UMKM .</p>
+      </div>
+      <div class="project">
+        <img src="images/proyek2.jpg" alt="Proyek 2" />
+        <h3>Proyek 2</h3>
+        <p>Membuat sebuah profile sekolah menggunakan website .</p>
+      </div>
+      <div class="project">
+        <img src="images/proyek3.jpg" alt="Proyek 3" />
+        <h3>Proyek 3</h3>
+        <p>Freelance sebagai desain grafis</p>
+      </div>
+    </section>
+
+    <section id="hobbies" class="hobbies">
+      <h2>Hobi</h2>
+      <p>
+        saya sangat senang dengan menjelajahi dunia teknologi, Membuat konten
+        untuk berbagai platform dan berbagi pengetahuan atau hiburan, Fotografi
+        Digital atau Videografi, Beraktivitas di luar ruangan untuk menikmati
+        alam, Olahraga
+      </p>
+
+      <img
+        src="images/hobby1.jpg"
+        alt="Hobi saya"
+        style="
+          width: 100%;
+          max-width: 400px;
+          border-radius: 10px;
+          margin-top: 20px;
+        "
+      />
+
+      <img
+        src="images/hobby2.jpg"
+        alt="Hobi saya"
+        style="
+          width: 100%;
+          max-width: 400px;
+          border-radius: 10px;
+          margin-top: 20px;
+        "
+      />
+
+      <img
+        src="images/hobby3.jpg"
+        alt="Hobi saya"
+        style="
+          width: 100%;
+          max-width: 400px;
+          border-radius: 10px;
+          margin-top: 20px;
+        "
+      />
+
+      <img
+        src="images/hobby4.jpg"
+        alt="Hobi saya"
+        style="
+          width: 100%;
+          max-width: 400px;
+          border-radius: 10px;
+          margin-top: 20px;
+        "
+      />
+    </section>
+
+    <section id="experience" class="experience">
+      <h2>Pengalaman</h2>
+      <p>Berikut adalah beberapa pengalaman saya :</p>
+
+      <div class="experience-item">
+        <h3>Magang kantor Pemerintah</h3>
+        <p>Pelayanan atau service untuk melayani dan memberi kenyamanan</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>vidiografer / fotografi</h3>
+        <p>
+          Menerima jasa vidiografer dan bertanggung jawab terhadap projek yang
+          diberikan
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Proyek Freelance</h3>
+        <p>
+          sebagai desain grafis dan membuat desain visual seperti postingan
+          gambar, banner, dan grafik untuk media sosial
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Kontak Saya</h2>
+      <p>Jika Anda ingin berkolaborasi, jangan ragu untuk menghubungi saya!</p>
+      <p>Email: <a href="ihsancikareo@gmail.com">ihsancikareo@gmail.com</a></p>
+      <p>Telepon: +62 8211-2298-247</p>
+
+      <p>Hubungi saya melalui media sosial:</p>
+
+      <div>
+        <a
+          href="https://www.facebook.com/moh.ihsan.12327?mibextid=LQQJ4d"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <img
+            src="images/facebook-icon.jpg"
+            alt="Facebook"
+            style="width: 30px; height: 30px; margin-right: 10px"
+          />
+        </a>
+        <a
+          href="https://www.tiktok.com/@Inikanisan"
+          target="_blank"
+          aria-label="TikTok"
+        >
+          <img
+            src="images/tiktok-icon.jpg"
+            alt="TikTok"
+            style="width: 30px; height: 30px; margin-right: 10px"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/_mdihsqn"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="images/instagram-icon.jpg"
+            alt="Instagram"
+            style="width: 30px; height: 30px; margin-right: 10px"
+          />
+        </a>
+
+        <a
+          href="mailto:ihsancikareo@gmail.com"
+          target="_blank"
+          aria-label="Gmail"
+        >
+          <img
+            src="images/gmail-icon.jpg"
+            alt="Gmail"
+            style="width: 30px; height: 30px"
+          />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Moh Ihsan . Hak Cipta Dilindungi.</p>
+    </footer>
+  </body>
+</html>
